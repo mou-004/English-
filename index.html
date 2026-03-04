@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,6 +30,7 @@
   <header class="fixed top-0 left-0 w-full bg-base-100 shadow z-50">
     <div class="navbar px-6">
       <div class="navbar-start">
+
         <div class="dropdown lg:hidden">
           <label tabindex="0" class="btn btn-ghost">
             <i class="fa-solid fa-bars text-xl"></i>
@@ -42,7 +44,6 @@
         </div>
 
         <!-- Logo -->
-
         <a href="#" class="flex items-center gap-2">
           <span class="text-lg font-bold">English</span>
           <img src="./assets/logo.png" class="w-8" alt="">
@@ -75,7 +76,7 @@
 
   <!-- HERO SECTION -->
   <section
-    class="flex flex-col-reverse md:flex-row justify-between items-center py-16 w-11/12 mx-auto"
+    class="flex flex-col-reverse md:flex-row justify-between items-center py-20 w-11/12 mx-auto gap-10"
   >
     <div class="w-full md:w-1/2 text-center md:text-left">
       <h2 class="text-4xl font-bold mb-6">
@@ -87,98 +88,88 @@
         আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে
         অন্য একটি Level এ
       </p>
-
-      <!-- FORM -->
-   <!--- <div class="space-y-3 max-w-sm mx-auto md:mx-0">
-        <input
-          type="text"
-          placeholder="Enter Your Name"
-          class="input input-bordered w-full" />
-
-        <input
-          type="password"
-          placeholder="********"
-          class="input input-bordered w-full" />
-
-        <button class="btn btn-primary w-full">
-          Get Started
-        </button>
-      </div> -->
     </div>
-    <div class="w-full md:w-1/2 flex justify-center md:justify-end mb-10 md:mb-0">
-      <img src="./assets/hero-student.png" alt="" />
-    </div> 
 
-  </section> 
+    <div class="w-full md:w-1/2 flex justify-center md:justify-end">
+      <img src="./assets/hero-student.png" class="w-full max-w-xs md:max-w-md" alt="" />
+    </div>
+  </section>
 
  <!--Vocabulary-->
 
-    <section class="py-10">
-      <h2 class="text-4xl font-bold mb-8 text-center">
-        <span class="text-sky-400">Let's</span> Learn Vocabulary
-      </h2>
+<section class="py-10">
 
-      <div
-        id="lesson-container"
-        class="flex gap-5 flex-wrap justify-center"
-      ></div>
-    </section>
+  <h2 class="text-4xl font-bold mb-8 text-center">
+    <span class="text-sky-400">Let's</span> Learn Vocabulary
+  </h2>
 
+  <div
+    id="lesson-container"
+    class="flex flex-wrap gap-3 md:gap-5 justify-center px-4"
+  ></div>
 
-   <section class="flex justify-center">
-      <div class="join">
-        <div>
-          <label class="input validator join-item">
-            <input
-              id="input-search"
-              type="text"
-              placeholder="Search Vocabulary Now"
-              required
-            />
-          </label>
-        </div>
-        <button id="btn-search" class="btn btn-primary join-item">
-          Search
-        </button>
-      </div>
-    </section>
-
-   <section id="spinner" class="flex justify-center items-center py-10 hidden">
-      <span class="loading loading-bars loading-xl"></span>
-    </section>
-
-    <section
-      id="word-container"
-      class="bg-gray-100 p-10 w-11/12 mx-auto my-10 grid grid-cols-3 gap-5"
-    >
-      <div
-        class="text-center bg-sky-100 col-span-full rounded-xl py-10 space-y-6 font-bangla"
-      >
-        <p class="text-xl font-medium text-gray-400">
-          আপনি এখনো কোন Lesson Select করেন নি
-        </p>
-        <h2 class="font-bold text-4xl">একটি Lesson Select করুন।</h2>
-      </div>
-    </section>
+</section>
 
 
-    
-    <!--word-->
+<!-- Search -->
+<section class="flex justify-center px-4">
 
-    <section class="w-11/12 mx-auto mt-10">
+  <div class="join w-full max-w-md">
 
- 
+    <div class="w-full">
+      <label class="input validator join-item w-full">
+        <input
+          id="input-search"
+          type="text"
+          placeholder="Search Vocabulary Now"
+          required
+          class="w-full"
+        />
+      </label>
+    </div>
 
-  <section class="w-11/12 mx-auto mt-16 mb-16">
+    <button id="btn-search" class="btn btn-primary join-item">
+      Search
+    </button>
 
-  <!-- FAQ SECTION -->
+  </div>
+
+</section>
+
+
+<!-- Spinner -->
+<section id="spinner" class="flex justify-center items-center py-10 hidden">
+  <span class="loading loading-bars loading-xl"></span>
+</section>
+
+
+<!-- Word Container -->
+<section
+  id="word-container"
+  class="bg-gray-100 p-6 md:p-10 w-11/12 mx-auto my-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"
+>
+
+  <div
+    class="text-center bg-sky-100 col-span-full rounded-xl py-10 space-y-6 font-bangla"
+  >
+    <p class="text-xl font-medium text-gray-400">
+      আপনি এখনো কোন Lesson Select করেন নি
+    </p>
+    <h2 class="font-bold text-4xl">একটি Lesson Select করুন।</h2>
+  </div>
+
+</section>
+
+
+<!-- FAQ SECTION -->
 <section id="faq-section" class="w-11/12 mx-auto mt-16 mb-16">
+
   <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">
     <span class="text-sky-400">Frequently</span> Asked Questions
   </h2>
+
   <div class="space-y-4">
 
-    <!-- Question 1 -->
     <div class="collapse collapse-arrow bg-base-200 rounded-lg">
       <input type="checkbox" name="faq-accordion" checked />
       <div class="collapse-title font-semibold">
@@ -199,7 +190,6 @@
       </div>
     </div>
 
-   
     <div class="collapse collapse-arrow bg-base-200 rounded-lg">
       <input type="checkbox" name="faq-accordion" />
       <div class="collapse-title font-semibold">
@@ -231,37 +221,33 @@
     </div>
 
   </div>
-</section>
 
 </section>
-<!--modal-->
+
+
+<!-- Modal -->
 <dialog id="word_modal" class="modal modal-bottom sm:modal-middle">
   <div class="modal-box rounded-2xl">
     <div id="details-container" class="space-y-4"></div>
   </div>
 </dialog>
 
-<!--spinner-->
-<section id="spinner" class="flex justify-center items-center py-10 hidden">
-  <span class="loading loading-bars loading-xl"></span>
-</section>
 
-
-<!--footer-->
-
+<!-- Footer -->
 <footer class="bg-white border-t mt-12">
 
-  <div class="w-11/12 mx-auto py-5 flex flex-col md:flex-row items-center justify-between text-sm text-gray-600">
+  <div class="w-11/12 mx-auto py-5 flex flex-col md:flex-row items-center justify-between text-sm text-gray-600 gap-4">
 
     <div class="flex items-center gap-2">
       <img src="./assets/logo.png" class="w-6" alt="English Janala Logo">
       <span class="font-semibold">English Janala</span>
     </div>
-    <p class="text-xs text-gray-500 mt-2 md:mt-0">
+
+    <p class="text-xs text-gray-500">
       © 2025 English Janala. All rights reserved.
     </p>
 
-    <div class="flex gap-4 mt-2 md:mt-0 text-gray-500">
+    <div class="flex gap-4 text-gray-500">
       <a class="hover:text-primary text-sm">
         <i class="fa-brands fa-facebook-f"></i>
       </a>
@@ -278,9 +264,9 @@
 </footer>
 
 
-     <!--script-->
-    <script src="./script/index.js"></script>
+<!-- Script -->
+<script src="./script/index.js"></script>
 
-    
 </body>
 </html>
+
