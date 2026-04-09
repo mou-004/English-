@@ -44,7 +44,3 @@ I recently completed my **English জানালা** project focusing on:
 - DaisyUI  
 - SpeechSynthesis API  
 - REST APIs (Dictionary & Translation APIs)  
-
-
-# Open index.html in browser
-open index.html
